@@ -335,9 +335,35 @@ template {
 }
 
 body {
+  font-family: "Lato", sans-serif;
+  color: #878787;
   font-size: 1rem;
   text-align: center;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #878787;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.img--logo {
+  margin: 45px 45px 30px 45px;
+}
+
+.nav {
+  font-size: 1.1em;
+}
+.nav__item {
+  margin: 5px 25px 5px 25px;
+}
+.nav__item:hover {
+  background-color: #58E1C1;
 }
 
 /*# sourceMappingURL=styles.css.map */

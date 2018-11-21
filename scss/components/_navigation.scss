@@ -1,0 +1,12 @@
+
+.nav {
+  font-size: 1.1em;
+
+  &__item {
+    margin: 5px 50px 5px 50px;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}
