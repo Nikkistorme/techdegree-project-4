@@ -358,12 +358,17 @@ ul {
 
 .nav {
   font-size: 1.1em;
+  margin-bottom: 110px;
 }
-.nav__item {
-  margin: 5px 25px 5px 25px;
+.nav__item a {
+  display: block;
+  margin: 0 35px 0 35px;
+  padding: 15px 100px 15px 100px;
+  border-radius: 5px;
 }
-.nav__item:hover {
+.nav__item a:hover {
   background-color: #58E1C1;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
