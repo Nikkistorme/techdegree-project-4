@@ -1,0 +1,10 @@
+.grid {
+  &__row {
+    display: flex;
+    flex-direction: column;
+  }
+  &__col--12 {
+    margin: 0 50px;
+    text-align: left;
+  }
+}

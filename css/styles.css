@@ -352,6 +352,19 @@ ul {
   padding: 0;
 }
 
+p {
+  line-height: 1.5em;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+}
+.grid__col--12 {
+  margin: 0 50px;
+  text-align: left;
+}
+
 .img--logo {
   margin: 45px 45px 30px 45px;
 }
