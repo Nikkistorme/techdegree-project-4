@@ -6,4 +6,10 @@
   &--avatar {
     margin: auto;
   }
+  &--frame {
+    width: 410px;
+    border: 1px solid lightgrey;
+    margin: 35px;
+    padding: 15px;
+  }
 }

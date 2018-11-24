@@ -2,6 +2,9 @@
 .form {
   display: flex;
   flex-direction: column;
+  .headline--secondary {
+    margin-left: 50px;
+  }
   &__label--hidden {
     display: none;
   }
