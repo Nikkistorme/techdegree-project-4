@@ -349,10 +349,12 @@ ul {
 
 p {
   line-height: 1.5em;
+  text-align: left;
 }
 
 .btn--default {
   width: 410px;
+  margin: 10px auto auto 35px;
   margin-left: 35px;
   border: none;
   border-radius: 5px;
@@ -369,17 +371,15 @@ p {
   flex-direction: column;
 }
 .form__label--hidden {
-  margin: 0 50px;
   display: none;
 }
 .form__input {
-  margin: 0 50px;
+  margin: 15px 50px 15px 50px;
   font-size: 0.9em;
   font-weight: bolder;
   border: none;
   border-bottom: solid #58E1C1 5px;
   padding: 10px;
-  margin-bottom: 20px;
 }
 .form__input:focus {
   outline: 0;
@@ -391,15 +391,16 @@ p {
 }
 .grid__row .card {
   margin: 0 50px;
-  margin-bottom: 75px;
-  text-align: left;
+}
+.grid__row .card h4 {
+  margin-left: 0px;
 }
 
 .img--logo {
   margin: 45px 45px 30px 45px;
 }
 .img--avatar {
-  margin: 15px auto;
+  margin: auto;
 }
 
 .nav {
@@ -423,12 +424,13 @@ p {
   margin: 20px 80px 30px 17px;
 }
 .headline--secondary {
-  margin: 0 50px;
+  margin: 75px 50px 15px 50px;
   font-weight: lighter;
   text-align: left;
 }
 
 .blockquote {
+  text-align: left;
   font-style: italic;
   font-size: 1.499em;
   padding-left: 20px;
