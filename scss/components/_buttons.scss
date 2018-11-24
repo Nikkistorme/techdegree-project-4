@@ -1,30 +1,24 @@
 
 .btn {
   &--default {
+    @include button;
     background-color: $color-secondary;
+    margin-top: 60px;
   }
   &--success {
+    @include button;
     background-color: $color-success;
   }
   &--error {
+    @include button;
     background-color: $color-error;
   }
   &--warning {
+    @include button;
     background-color: $color-warning;
   }
   &--info {
+    @include button;
     background-color: $color-info;
   }
-}
-
-.theme__colors {
-  width: 410px;
-  margin: 25px auto auto auto;
-  border: none;
-  border-radius: 5px;
-  color: $white;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: .9em;
-  padding: 13px;
 }

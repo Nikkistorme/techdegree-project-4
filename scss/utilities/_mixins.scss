@@ -1,4 +1,16 @@
 
+// BUTTONS
+@mixin button {
+  width: 410px;
+  margin: 25px auto auto auto;
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .9em;
+  padding: 13px;
+}
 
 // MEDIA QUERIES
 

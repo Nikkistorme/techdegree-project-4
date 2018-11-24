@@ -353,22 +353,6 @@ p {
 }
 
 .btn--default {
-  background-color: #51DDFC;
-}
-.btn--success {
-  background-color: #63CC82;
-}
-.btn--error {
-  background-color: #E4757A;
-}
-.btn--warning {
-  background-color: #FD7856;
-}
-.btn--info {
-  background-color: #927BC1;
-}
-
-.theme__colors {
   width: 410px;
   margin: 25px auto auto auto;
   border: none;
@@ -378,6 +362,56 @@ p {
   font-weight: bold;
   font-size: 0.9em;
   padding: 13px;
+  background-color: #51DDFC;
+  margin-top: 60px;
+}
+.btn--success {
+  width: 410px;
+  margin: 25px auto auto auto;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 13px;
+  background-color: #63CC82;
+}
+.btn--error {
+  width: 410px;
+  margin: 25px auto auto auto;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 13px;
+  background-color: #E4757A;
+}
+.btn--warning {
+  width: 410px;
+  margin: 25px auto auto auto;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 13px;
+  background-color: #FD7856;
+}
+.btn--info {
+  width: 410px;
+  margin: 25px auto auto auto;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 13px;
+  background-color: #927BC1;
 }
 
 .form {
