@@ -1,0 +1,21 @@
+
+.form {
+  display: flex;
+  flex-direction: column;
+  &__label--hidden {
+    margin: 0 50px;
+    display: none;
+  }
+  &__input {
+    margin: 0 50px;
+    font-size: .9em;
+    font-weight: bolder;
+    border: none;
+    border-bottom: solid $color-primary 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    &:focus {
+      outline: 0;
+    }
+  }
+}
