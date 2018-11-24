@@ -353,17 +353,31 @@ p {
 }
 
 .btn--default {
+  background-color: #51DDFC;
+}
+.btn--success {
+  background-color: #63CC82;
+}
+.btn--error {
+  background-color: #E4757A;
+}
+.btn--warning {
+  background-color: #FD7856;
+}
+.btn--info {
+  background-color: #927BC1;
+}
+
+.theme__colors {
   width: 410px;
-  margin: 10px auto auto 35px;
-  margin-left: 35px;
+  margin: 25px auto auto auto;
   border: none;
   border-radius: 5px;
-  background-color: #51DDFC;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.9em;
-  padding: 10px;
+  padding: 13px;
 }
 
 .form {
@@ -378,6 +392,8 @@ p {
 }
 .form__input {
   margin: 15px 50px 15px 50px;
+  width: 380px;
+  align-self: center;
   font-size: 0.9em;
   font-weight: bolder;
   border: none;
@@ -386,6 +402,9 @@ p {
 }
 .form__input:focus {
   outline: 0;
+}
+.form .btn--default {
+  margin-top: 10px;
 }
 
 .grid__row {

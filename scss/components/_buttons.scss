@@ -1,16 +1,30 @@
 
 .btn {
   &--default {
-    width: 410px;
-    margin: 10px auto auto 35px;
-    margin-left: 35px;
-    border: none;
-    border-radius: 5px;
     background-color: $color-secondary;
-    color: $white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: .9em;
-    padding: 10px;
   }
+  &--success {
+    background-color: $color-success;
+  }
+  &--error {
+    background-color: $color-error;
+  }
+  &--warning {
+    background-color: $color-warning;
+  }
+  &--info {
+    background-color: $color-info;
+  }
+}
+
+.theme__colors {
+  width: 410px;
+  margin: 25px auto auto auto;
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .9em;
+  padding: 13px;
 }
