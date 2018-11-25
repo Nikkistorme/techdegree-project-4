@@ -1,15 +1,27 @@
 
-// BUTTONS
-@mixin button {
-  width: 410px;
+// BOX & BUTTON
+@mixin grid_box ($back_color: $color-primary) {
+  background-color: $back_color;
+  @extend %rounded_box;
+  width: 430px;
+  font-weight: bold;
+  padding: 13px;
+  text-align: left;
+  margin: 3px;
+  @content;
+}
+
+@mixin button ($back_color: $color-primary){
+  background-color: $back_color;
+  @extend %rounded_box;
   margin: 25px auto auto auto;
+  width: 410px;
+  height: 50px;
   border: none;
-  border-radius: 5px;
   color: $white;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: .9em;
-  padding: 13px;
+  font-weight: bolder;
+  @content;
 }
 
 // MEDIA QUERIES

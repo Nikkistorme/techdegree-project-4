@@ -2,6 +2,8 @@
   &__row {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 30px;
     .card {
       margin: 0 50px;
       h4 {
@@ -9,6 +11,25 @@
       }
     }
   }
+  &__col--3 {
+    @include grid_box($back_color: #DEB2EE);
+  }
+  &__col--4 {
+    @include grid_box($back_color: lighten($color-secondary, 10%));
+  }
+  &__col--5 {
+    @include grid_box($back_color: #88D9A0);
+  }
   &__col--6 {
+    @include grid_box($back_color: darken($color-secondary, 25%));
+  }
+  &__col--7 {
+    @include grid_box($back_color: #EC9FA3);
+  }
+  &__col--8 {
+    @include grid_box($back_color: #FD9F85);
+  }
+  &__col--12 {
+    @include grid_box($back_color: lighten($color-primary, 10%));
   }
 }

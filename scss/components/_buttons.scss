@@ -1,24 +1,19 @@
 
 .btn {
   &--default {
-    @include button;
-    background-color: $color-secondary;
+    @include button($back_color: $color-secondary);
     margin-top: 60px;
   }
   &--success {
-    @include button;
-    background-color: $color-success;
+    @include button($back_color: $color-success);
   }
   &--error {
-    @include button;
-    background-color: $color-error;
+    @include button($back_color: $color-error);
   }
   &--warning {
-    @include button;
-    background-color: $color-warning;
+    @include button($back_color: $color-warning);
   }
   &--info {
-    @include button;
-    background-color: $color-info;
+    @include button($back_color: $color-info);
   }
 }
