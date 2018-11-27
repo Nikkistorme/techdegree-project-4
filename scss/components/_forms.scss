@@ -20,6 +20,9 @@
     &:focus {
       outline: 0;
     }
+    @media (min-width: map-get($breakpoints, "med")) {
+      width: 295px;
+    }
   }
   .btn--default {
     margin-top: 10px;

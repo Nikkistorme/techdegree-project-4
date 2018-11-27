@@ -4,6 +4,10 @@
     font-size: 1.9em;
     color: $color-primary;
     margin: 20px 80px 30px 17px;
+    @media (min-width: map-get($breakpoints, "med")) {
+      margin: 20px 0 30px 20px;
+      text-align: left;
+    }
   }
   &--secondary {
     margin: 75px 50px 15px 35px;
@@ -16,7 +20,7 @@
   text-align: left;
   font-style: italic;
   font-size: 1.499em;
-  padding-left: 20px;
+  padding-left: 5%;
   margin-left: 25px;
   margin-right: 15px;
   border-left: solid 9px $color-primary;

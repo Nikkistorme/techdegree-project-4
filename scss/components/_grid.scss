@@ -13,7 +13,7 @@
   &__row {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin: 30px;
     @media (min-width: map-get($breakpoints, "med")) {
       flex-direction: row;
