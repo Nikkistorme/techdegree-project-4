@@ -8,6 +8,12 @@
   padding: 13px;
   text-align: left;
   margin: 3px;
+  &.centered {
+    margin: auto;
+  }
+  @media (min-width: map-get($breakpoints, "med")) {
+    text-align: center;
+  }
   @content;
 }
 

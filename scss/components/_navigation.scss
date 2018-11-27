@@ -1,6 +1,11 @@
 
 .nav {
   margin-bottom: 70px;
+  @media (min-width: map-get($breakpoints, "med")) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   &__item {
     a {
       @extend %rounded_box;
@@ -11,6 +16,10 @@
       &:hover {
         background-color: $color-primary;
         color: $white;
+      }
+      @media (min-width: map-get($breakpoints, "med")) {
+        width: auto;
+        padding: 10px;
       }
     }
   }

@@ -1,9 +1,23 @@
+
+.container {
+  width: 480px;
+  @media (min-width: map-get($breakpoints, "med")) {
+    width: 85%;
+  }
+  @media (min-width: map-get($breakpoints, "lg")) {
+    width: 1190px;
+  }
+}
+
 .grid {
   &__row {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px;
+    @media (min-width: map-get($breakpoints, "med")) {
+      flex-direction: row;
+    }
     .card {
       margin: 0 20px;
       h4 {
@@ -12,38 +26,63 @@
     }
   }
   &__col--3 {
+    flex: 1;
     &.theme__colors {
       @include grid_box($back_color: #DEB2EE);
+      flex: 1;
     }
   }
   &__col--4 {
+    flex: .33;
     &.theme__colors {
       @include grid_box($back_color: lighten($color-secondary, 10%));
+      flex: .33;
     }
   }
   &__col--5 {
+    flex: 1.4;
     &.theme__colors {
       @include grid_box($back_color: #88D9A0);
+      flex: 1.4;
     }
   }
   &__col--6 {
+    @media (min-width: map-get($breakpoints, "med")) {
+      width: auto;
+      flex: 1;
+    }
     &.theme__colors {
       @include grid_box($back_color: darken($color-secondary, 25%));
+      @media (min-width: map-get($breakpoints, "med")) {
+        width: auto;
+        flex-grow: 1;
+      }
     }
   }
   &__col--7 {
+    flex: 2;
     &.theme__colors {
       @include grid_box($back_color: #EC9FA3);
+      flex: 2;
+      max-width: 649.05px;
     }
   }
   &__col--8 {
+    flex: .67;
     &.theme__colors {
       @include grid_box($back_color: #FD9F85);
+      flex: .67;
     }
   }
   &__col--12 {
+    @media (min-width: map-get($breakpoints, "med")) {
+      width: 100%;
+    }
     &.theme__colors {
       @include grid_box($back_color: lighten($color-primary, 10%));
+      @media (min-width: map-get($breakpoints, "med")) {
+        width: 100%;
+      }
     }
   }
 }
