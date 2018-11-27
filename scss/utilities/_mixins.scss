@@ -1,6 +1,6 @@
 
 // BOX & BUTTON
-@mixin grid_box ($back_color: $color-primary) {
+@mixin grid_box ($back_color: null) {
   background-color: $back_color;
   @extend %rounded_box;
   width: 430px;
