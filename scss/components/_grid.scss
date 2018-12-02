@@ -13,10 +13,11 @@
   &__row {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin: 30px;
     @media (min-width: map-get($breakpoints, "med")) {
       flex-direction: row;
+      align-items: flex-start;
     }
     .card {
       margin: 0 20px;
@@ -26,13 +27,17 @@
     }
   }
   &__col--3 {
-    flex: 1;
+    flex: .25;
+    align-self: center;
+    // @media (min-width: map-get($breakpoints, "lg")) {
+    //   width: 276.5px;
+    // }
     &.theme__colors {
       @include grid_box($back_color: #DEB2EE);
-      flex: 1;
     }
   }
   &__col--4 {
+    align-self: center;
     flex: .33;
     &.theme__colors {
       @include grid_box($back_color: lighten($color-secondary, 10%));
@@ -47,6 +52,7 @@
     }
   }
   &__col--6 {
+    align-self: center;
     @media (min-width: map-get($breakpoints, "med")) {
       width: auto;
       flex: 1;
@@ -74,7 +80,11 @@
       flex: .67;
     }
   }
+  &__col--9 {
+    flex: 1.75;
+  }
   &__col--12 {
+    align-self: center;
     @media (min-width: map-get($breakpoints, "med")) {
       width: 100%;
     }

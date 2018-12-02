@@ -4,6 +4,7 @@
     margin: 45px 45px 30px 45px;
     @media (min-width: map-get($breakpoints, "med")) {
       margin: 30px 45px 30px 20px;
+      float: left;
     }
   }
   &--avatar {
@@ -12,7 +13,7 @@
   &--frame {
     width: 410px;
     border: 1px solid lightgrey;
-    margin: 35px;
     padding: 15px;
+    margin: 10px;
   }
 }

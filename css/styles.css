@@ -415,6 +415,7 @@ p {
 }
 
 .form {
+  margin-right: auto;
   display: flex;
   flex-direction: column;
 }
@@ -463,12 +464,13 @@ p {
 .grid__row {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin: 30px;
 }
 @media (min-width: 769px) {
   .grid__row {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 .grid__row .card {
@@ -478,7 +480,8 @@ p {
   margin-left: 0px;
 }
 .grid__col--3 {
-  flex: 1;
+  flex: 0.25;
+  align-self: center;
 }
 .grid__col--3.theme__colors {
   background-color: #DEB2EE;
@@ -487,7 +490,6 @@ p {
   padding: 13px;
   text-align: left;
   margin: 3px;
-  flex: 1;
 }
 .grid__col--3.theme__colors.centered {
   margin: auto;
@@ -498,6 +500,7 @@ p {
   }
 }
 .grid__col--4 {
+  align-self: center;
   flex: 0.33;
 }
 .grid__col--4.theme__colors {
@@ -536,6 +539,9 @@ p {
   .grid__col--5.theme__colors {
     text-align: center;
   }
+}
+.grid__col--6 {
+  align-self: center;
 }
 @media (min-width: 769px) {
   .grid__col--6 {
@@ -606,6 +612,12 @@ p {
     text-align: center;
   }
 }
+.grid__col--9 {
+  flex: 1.75;
+}
+.grid__col--12 {
+  align-self: center;
+}
 @media (min-width: 769px) {
   .grid__col--12 {
     width: 100%;
@@ -639,6 +651,7 @@ p {
 @media (min-width: 769px) {
   .img--logo {
     margin: 30px 45px 30px 20px;
+    float: left;
   }
 }
 .img--avatar {
@@ -647,8 +660,8 @@ p {
 .img--frame {
   width: 410px;
   border: 1px solid lightgrey;
-  margin: 35px;
   padding: 15px;
+  margin: 10px;
 }
 
 .nav {
@@ -659,6 +672,14 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 54px auto 50px auto;
+  }
+}
+@media (min-width: 1400px) {
+  .nav {
+    align-items: flex-start;
+    justify-content: normal;
+    width: 415px;
   }
 }
 .nav__item a {
@@ -675,6 +696,11 @@ p {
   .nav__item a {
     width: auto;
     padding: 10px;
+  }
+}
+@media (min-width: 1400px) {
+  .nav__item a {
+    margin-right: 30px;
   }
 }
 
