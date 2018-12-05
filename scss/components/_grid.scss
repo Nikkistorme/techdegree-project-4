@@ -29,23 +29,20 @@
   &__col--3 {
     flex: .25;
     align-self: center;
-    // @media (min-width: map-get($breakpoints, "lg")) {
-    //   width: 276.5px;
-    // }
     &.theme__colors {
       @include grid_box($back_color: #DEB2EE);
     }
   }
   &__col--4 {
     align-self: center;
-    flex: .33;
+    flex: 1 0 0;
     &.theme__colors {
       @include grid_box($back_color: lighten($color-secondary, 10%));
       flex: .33;
     }
   }
   &__col--5 {
-    flex: 1.4;
+    flex: 1 0 0;
     &.theme__colors {
       @include grid_box($back_color: #88D9A0);
       flex: 1.4;
@@ -66,7 +63,7 @@
     }
   }
   &__col--7 {
-    flex: 2;
+    flex: 2 0 0;
     &.theme__colors {
       @include grid_box($back_color: #EC9FA3);
       flex: 2;
@@ -74,7 +71,7 @@
     }
   }
   &__col--8 {
-    flex: .67;
+    flex: 1.67 0 0;
     &.theme__colors {
       @include grid_box($back_color: #FD9F85);
       flex: .67;

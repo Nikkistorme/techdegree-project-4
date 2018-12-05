@@ -2,10 +2,6 @@
 .btn {
   &--default {
     @include button($back_color: $color-secondary);
-    @media (min-width: map-get($breakpoints, "med")) {
-      width: 335px;
-    }
-    margin-top: 60px;
   }
   &--success {
     @include button($back_color: $color-success);

@@ -22,10 +22,14 @@
       outline: 0;
     }
     @media (min-width: map-get($breakpoints, "med")) {
-      width: 295px;
+      width: 70%;
     }
   }
   .btn--default {
     margin-top: 10px;
+    @media (min-width: map-get($breakpoints, "med")) {
+      align-self: center;
+      width: 80%;
+    }
   }
 }
