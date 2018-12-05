@@ -2,10 +2,10 @@
 .nav {
   margin-bottom: 70px;
   @include mq("lg") {
+    @include flexy($dir: row, $ali: flex-start);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: normal;
     margin: 54px auto 50px auto;
     width: 415px;
   }
