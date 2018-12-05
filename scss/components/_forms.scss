@@ -1,8 +1,7 @@
 
 .form {
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
+  @include flexy($dir: column);
   .headline--secondary {
     margin-left: 50px;
   }
@@ -21,13 +20,13 @@
     &:focus {
       outline: 0;
     }
-    @media (min-width: map-get($breakpoints, "med")) {
+    @include mq("lg") {
       width: 70%;
     }
   }
   .btn--default {
     margin-top: 10px;
-    @media (min-width: map-get($breakpoints, "med")) {
+    @include mq("lg") {
       align-self: center;
       width: 80%;
     }

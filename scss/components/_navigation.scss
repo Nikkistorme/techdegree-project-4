@@ -1,15 +1,12 @@
 
 .nav {
   margin-bottom: 70px;
-  @media (min-width: map-get($breakpoints, "med")) {
+  @include mq("lg") {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 54px auto 50px auto;
-  }
-  @media (min-width: map-get($breakpoints, "lg")) {
     align-items: flex-start;
     justify-content: normal;
+    margin: 54px auto 50px auto;
     width: 415px;
   }
   &__item {
@@ -23,11 +20,9 @@
         background-color: $color-primary;
         color: $white;
       }
-      @media (min-width: map-get($breakpoints, "med")) {
+      @include mq("lg") {
         width: auto;
         padding: 10px;
-      }
-      @media (min-width: map-get($breakpoints, "lg")) {
         margin-right: 30px;
       }
     }

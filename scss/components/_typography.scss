@@ -4,12 +4,13 @@
     font-size: 1.9em;
     color: $color-primary;
     margin: 20px 80px 30px 17px;
-    @media (min-width: map-get($breakpoints, "med")) {
+    @include mq("lg") {
       margin: 20px 0 30px 20px;
       text-align: left;
     }
   }
   &--secondary {
+    color: lighten(black, 70%);
     margin: 75px 50px 15px 35px;
     font-weight: lighter;
     text-align: left;

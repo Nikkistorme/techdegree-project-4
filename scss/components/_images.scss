@@ -2,7 +2,7 @@
 .img {
   &--logo {
     margin: 45px 45px 30px 45px;
-    @media (min-width: map-get($breakpoints, "med")) {
+    @include mq("lg") {
       margin: 30px 45px 30px 20px;
       float: left;
     }
