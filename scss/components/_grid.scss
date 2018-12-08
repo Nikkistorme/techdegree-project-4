@@ -1,5 +1,10 @@
 
 .container {
+  font-family: $font-primary;
+  color: $color-font-primary;
+  font-size: 1.1em;
+  text-align: center;
+  margin: auto;
   width: 480px;
   @include mq("med") {
     width: 85%;
@@ -9,77 +14,43 @@
   }
 }
 
+// CALCULATE GRID COLUMNS
+@for $i from 1 through $g-col-count {
+
+  $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+  $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+
+  // Generate column modifier classes
+
+  .grid__col--#{$i} {
+    &.theme__colors {
+      @include grid_box(map-get($box_colors, "color-#{$i}"));
+      width: 420px;
+      margin: ($g-gutter-width / 2);
+    }
+    @include mq("med") {
+      width: percentage($target / $context);
+    }
+    @include mq("lg") {
+      &.theme__colors {
+        width: percentage($target / $context);
+      }
+    }
+  }
+};
+
 .grid {
   &__row {
     @include flexy($dir: column, $ali: center);
     margin: 30px;
     @include mq("lg") {
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
     }
     .card {
       margin: 0 20px;
       h4 {
         margin-left: 0px;
-      }
-    }
-  }
-  &__col--3 {
-    flex: .25;
-    &.theme__colors {
-      @include grid_box($back_color: #DEB2EE);
-    }
-  }
-  &__col--4 {
-    flex: 1 0 0;
-    &.theme__colors {
-      @include grid_box($back_color: lighten($color-secondary, 10%));
-      flex: .33;
-    }
-  }
-  &__col--5 {
-    flex: 1 0 0;
-    &.theme__colors {
-      @include grid_box($back_color: #88D9A0);
-      flex: 1.4;
-    }
-  }
-  &__col--6 {
-    @include mq("lg") {
-      width: auto;
-      flex: 1;
-    }
-    &.theme__colors {
-      @include grid_box($back_color: darken($color-secondary, 25%));
-      @include mq("lg") {
-        width: auto;
-        flex-grow: 1;
-      }
-    }
-  }
-  &__col--7 {
-    flex: 2 0 0;
-    &.theme__colors {
-      @include grid_box($back_color: #EC9FA3);
-      flex: 2;
-      max-width: 649.05px;
-    }
-  }
-  &__col--8 {
-    flex: 1.67 0 0;
-    &.theme__colors {
-      @include grid_box($back_color: #FD9F85);
-      flex: .67;
-    }
-  }
-  &__col--9 {
-    flex: 1.75;
-  }
-  &__col--12 {
-    &.theme__colors {
-      @include grid_box($back_color: lighten($color-primary, 10%));
-      @include mq("lg") {
-        width: 100%;
       }
     }
   }

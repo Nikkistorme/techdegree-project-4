@@ -22,3 +22,24 @@ $color-success: #63CC82; // GREEN
 $color-error: #E4757A; // MAROON
 $color-warning: #FD7856; // RED-ORANGE
 $color-info: #927BC1; // PURPLE
+
+$box_colors: (
+  "color-1": null,
+  "color-2": null,
+  "color-3": #DEB2EE,
+  "color-4": $color-secondary,
+  "color-5": lighten($color-success, 10%),
+  "color-6": darken($color-secondary, 20%),
+  "color-7": lighten($color-error, 10%),
+  "color-8": lighten($color-warning, 10%),
+  "color-9": null,
+  "color-10": null,
+  "color-11": null,
+  "color-12": lighten($color-primary, 10%)
+);
+
+// GRID
+$g-col-width: 83px;
+$g-gutter-width: 10px;
+$g-col-count: 12;
+$g-cont-max-w: 1124px;
